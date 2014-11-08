@@ -4,4 +4,5 @@ body {
 
 div {
   background: #ffffff;
+  position: absolute;
 }
