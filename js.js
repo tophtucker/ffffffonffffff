@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
   〇.setAttribute("style",
       "transform: translate(-50%,-50%) "
                + "rotate(" + θ + "rad); "
-    + "left: "   + x +"px; "
-    + "top: "    + y +"px; "
-    + "width: "  + ẋ +"px; "
-    + "height: " + ẏ +"px; ");
+    + "left: "   + x + "px; "
+    + "top: "    + y + "px; "
+    + "width: "  + ẋ + "px; "
+    + "height: " + ẏ + "px; ");
 
   〇.addEventListener("click", function() {
     location.reload();
