@@ -1,4 +1,4 @@
-var ᴨ = Math.PI,
+var τ = 2 * Math.PI,
     ξ = Math.random;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -6,13 +6,23 @@ document.addEventListener("DOMContentLoaded", function() {
       w = window.innerWidth,
       h = window.innerHeight;
 
-  var x = Math.round(w * ξ()),
-      y = Math.round(h * ξ());
+  var x = w * ξ(),
+      y = h * ξ();
 
-  var ẋ = Math.round(w * ξ()),
-      ẏ = Math.round(h * ξ());
+  var ẋ = w * ξ(),
+      ẏ = h * ξ();
 
-  var θ = Math.round(2 * ᴨ * ξ());
+  var θ = τ * ξ();
 
-  〇.setAttribute("style","transform: translate(-50%,-50%) rotate("+θ+"rad); left: "+x+"px; top: "+y+"px; width: "+ẋ+"px; height: "+ẏ+"px;");
+  〇.setAttribute("style",
+      "transform: translate(-50%,-50%) "
+               + "rotate(" + θ + "rad); "
+    + "left: "   + x +"px; "
+    + "top: "    + y +"px; "
+    + "width: "  + ẋ +"px; "
+    + "height: " + ẏ +"px; ");
+
+  〇.addEventListener("click", function() {
+    location.reload();
+  });
 });

@@ -5,4 +5,5 @@ body {
 div {
   background: #ffffff;
   position: absolute;
+  cursor: pointer;
 }
